@@ -38,6 +38,7 @@ nav{
 .navbar-nav  li a{
     color: #4b4848;
     font-weight: bold;
+    margin-left: 45px;
 }
 .navbar-nav  li a:hover{
     color: #D8A64D;
@@ -56,12 +57,16 @@ nav{
 } */
 /*  carousel */
 .carousel-inner .carousel-caption{
-    padding-bottom: 170px; 
+    margin-bottom: 180px; 
+    background-color: #b4afaf8c;
+    padding: 100px;
+    border-radius: 5px;
 }
 .carousel-container {
     height: 100%; /* adjust the height to your desired value */
-    width: 75%; /* adjust the width to your desired value */
+    width: 78%; /* adjust the width to your desired value */
   }
+  
 .carousel-inner .carousel-item img{
     background-color: linear-gradient(#721e1efa, #eb0909) !important;
 }
