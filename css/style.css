@@ -15,7 +15,8 @@ section{
 }
 .header-banner{
     background: red;
-    background-image: url(../img/uk.jpg);
+    background-image: 
+    linear-gradient(#dfdfdf34, #dfdfdf8e),url(../img/uk.jpg);
     height: 80vh !important;
     background-repeat: no-repeat;
     background-size: cover;
