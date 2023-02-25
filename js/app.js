@@ -35,3 +35,6 @@ $('.slider').slick({
       // instead of a settings object
     ]
   });
+
+  /* animation js */
+  AOS.init({ offset: 200, duration: 400 });

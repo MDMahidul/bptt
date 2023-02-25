@@ -4,81 +4,208 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/Logo.jpg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <script src="https://kit.fontawesome.com/0500892bc1.js" crossorigin="anonymous" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Home Page</title>
   </head>
   <body>
-    <section class="header-banner px-5 mb-5">
-      <!-- Top header -->
-      <div class="d-flex justify-content-between top-header mx-5 py-2">
-        <div><i class="fa-solid fa-phone"></i> <span>09611-600500</span></div>
-        <div>
-          <i class="fa-solid fa-envelope"></i> <span>inquiry@oscl.io</span>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-          Follow us on: <i class="fa-brands fa-facebook"></i
-          ><i class="fa-brands fa-instagram"></i
-          ><i class="fa-brands fa-twitter"></i>
-        </div>
-      </div>
-      <header class="container-fluid mx-auto">
-        <!-- Navbar section -->
-        <nav class="navbar navbar-expand-lg bg-transparent mx-4">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                    OUR SERVICES
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">SERVICES 1</a></li>
-                    <li><a class="dropdown-item" href="#">SERVICES 2</a></li>
-                    <li><a class="dropdown-item" href="#">SERVICES 3</a></li>
+              <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg bg-transparent px-5">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                  ><img src="img/logo.png" alt=""
+                /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">OUR SERVICES</a>
+                    </li>
                   </ul>
-                </li>
-              </ul>
+                </div>
+              </div>
+    </nav>
+      <header class="mx-auto">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-container mx-auto" data-bs-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="img/aus.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="banner-text">
+                      <h3 class="dancing-font">world best tourism agency</h3>
+                      <h1 class="">Save up to 60% in this summer</h1>
+                      <h5>Starts from $250 only (2 Days and 3 nights)</h5>
+                      <button class="btn btn-primary mt-3">CONTACT US</button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/malay.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="banner-text">
+                      <h3 class="dancing-font">world best tourism agency</h3>
+                      <h1 class="">Save up to 60% in this summer</h1>
+                      <h5>Starts from $250 only (2 Days and 3 nights)</h5>
+                      <button class="btn btn-primary mt-3">CONTACT US</button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="img/uk.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="banner-text">
+                      <h3 class="dancing-font">world best tourism agency</h3>
+                      <h1 class="">Save up to 60% in this summer</h1>
+                      <h5>Starts from $250 only (2 Days and 3 nights)</h5>
+                      <button class="btn btn-primary mt-3">CONTACT US</button>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </nav>
-        <!-- banner text -->
-        <div class="banner-text">
-          <h4 class="b-agency">world best tourism agency</h4>
-          <h1 class="">Save up to 60% in this summer</h1>
-          <h5>Starts from $250 only (2 Days and 3 nights)</h5>
-          <button class="btn btn-success mt-3">CONTACT US</button>
         </div>
-      </header>
+        <!-- banner text -->
+
     </section>
     <main>
-      <section class="px-5 mx-5 mt-5">
+      <!-- Best deal section -->
+      <section class="best-deals px-5 mx-5 mt-5">
+        <div class="row">
+          <div class="col-md-3 col-12 align-self-center">
+            <h3 class="dancing-font">Our</h3>
+            <h3>BEST DEALS</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+              fugiat eos placeat explicabo assumenda eius recusandae
+              exercitationem suscipit.
+            </p>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="card">
+              <img src="img/study.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Studay In Abroad</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="card">
+              <img src="img/working.png" class="card-img-top" alt="..." />
+              <div class="card-body pt-5 mt-2">
+                <h5 class="card-title">Workin Opportunities</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12">
+            <div class="card">
+              <img src="img/travel.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Traveling</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about us section -->
+      <section class="about-us px-5 mx-5 mt-5">
+        <div class="row w-75 mx-auto">
+          <div class="col-md-6 col-12" data-aos="slide-right">
+            <h3 class="dancing-font">About</h3>
+            <h3>BPTT</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+              fugiat eos placeat explicabo assumenda eius recusandae
+              exercitationem suscipit. Aspernatur aliquam itaque quasi nemo
+              porro libero cum facere? Ratione asperiores accusantium quisquam
+              magnam aspernatur. Magni distinctio, fugiat itaque similique vitae
+              ipsam voluptate dicta non, rerum nesciunt quas quam. Deserunt
+              inventore, cupiditate earum aut sapiente, autem nam, qui eum ad
+              asperiores cumque maiores vero similique tenetur. Deserunt,
+              nostrum inventore? Ratione facilis rerum quod ipsam? Asperiores ea
+              corrupti eligendi fugit facere alias nesciunt repellat, dolorem
+              nostrum magnam, adipisci distinctio accusamus nemo architecto odit
+              atque ipsum facilis. Totam vitae deserunt corrupti rem? Ad sed, ea
+              amet nihil impedit consequatur laborum adipisci nam, magnam quam
+              qui quaerat obcaecati velit? Quas saepe ipsum eligendi iusto iste
+              et, veritatis explicabo error itaque exercitationem natus suscipit
+              maiores tenetur, id dolorem aperiam similique ea nostrum dicta
+              doloribus consequuntur rerum. Mollitia necessitatibus quod
+              corporis ipsam tenetur asperiores nam natus obcaecati!
+            </p>
+          </div>
+          <div class="col-md-6 col-12" data-aos="slide-left">
+            <img class="w-75" src="img/Logo.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="px-5 mx-5 mt-5 feature-trips">
         <!-- card section -->
-        <div class="text-center w-50 mx-auto mb-5">
-          <h3 class="b-agency">Our Agency</h3>
+        <div class="text-center w-50 mx-auto mb-5" data-aos="zoom-in">
+          <h3 class="dancing-font">Our Agency</h3>
           <h3>Feature Trips</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
@@ -86,7 +213,11 @@
             facilis eligendi? Soluta.
           </p>
         </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div
+          class="row row-cols-1 row-cols-md-4 g-4"
+          id="scroll-content"
+          data-aos="slide-right"
+        >
           <div class="col">
             <div class="card">
               <img src="img/aus.jpg" class="card-img-top" alt="..." />
@@ -97,7 +228,7 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <button class="btn btn-success">CONTACT US</button>
+                <button class="btn btn-primary">CONTACT US</button>
               </div>
             </div>
           </div>
@@ -111,7 +242,7 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <button class="btn btn-success">CONTACT US</button>
+                <button class="btn btn-primary">CONTACT US</button>
               </div>
             </div>
           </div>
@@ -125,7 +256,7 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <button class="btn btn-success">CONTACT US</button>
+                <button class="btn btn-primary">CONTACT US</button>
               </div>
             </div>
           </div>
@@ -139,15 +270,15 @@
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <button class="btn btn-success">CONTACT US</button>
+                <button class="btn btn-primary">CONTACT US</button>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="px-5 mx-5 mt-5">
-        <div class="text-center mx-auto w-50 mb-5">
-          <h3 class="b-agency">Provide Packeges</h3>
+        <div class="text-center mx-auto w-50 mb-5" data-aos="zoom-in">
+          <h3 class="dancing-font">Provide Packeges</h3>
           <h3>Convenience</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
@@ -157,7 +288,7 @@
           </p>
         </div>
         <!--  -->
-        <div class="row slider row-cols-md-12 g-4">
+        <div class="row slider row-cols-md-12 g-4" data-aos="slide-up">
           <div class="col-12 text-center">
             <div class="card packege-card">
               <i class="fa-solid fa-hotel"></i>
@@ -201,7 +332,7 @@
             <div class="card packege-card">
               <i class="fa-regular fa-file-lines"></i>
               <div class="card-body">
-                <h5 class="card-title">Visa Facilities</h5>
+                <h5 class="card-title">Visa</h5>
                 <p class="card-text">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -227,7 +358,7 @@
             <div class="card packege-card">
               <i class="fa-regular fa-file-lines"></i>
               <div class="card-body">
-                <h5 class="card-title">Visa Facilities</h5>
+                <h5 class="card-title">Visa</h5>
                 <p class="card-text">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -258,7 +389,9 @@
           <div class="col-md-3 col-12">
             <div class="p-3">
               <ul class="list-group-flush">
-                <li class="list-group-item"><h4 class="border-bottom">Our Services</h4></li>
+                <li class="list-group-item">
+                  <h4 class="border-bottom">Our Services</h4>
+                </li>
                 <li class="list-group-item">An item</li>
                 <li class="list-group-item">A second item</li>
                 <li class="list-group-item">A third item</li>
@@ -285,33 +418,24 @@
             <div class="p-3 text-dark">
               <h5 class="text-white border-bottom">Contact Us</h5>
               <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Email address</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="Enter your email"/>
               </div>
               <div class="form-floating">
-                <textarea
-                  class="form-control"
-                  placeholder="Leave a comment here"
-                  id="floatingTextarea"
-                ></textarea>
-                <label for="floatingTextarea">Comments</label>
+                <input  class="form-control" placeholder="Leave a comment here" id="floatingTextarea" ></input>
                 <div class="d-grid mt-3">
-                  <button class="btn btn-success" type="button">Submit</button>
+                  <button class="btn btn-primary" type="button">Submit</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    
+      <div class="text-center pt-5">
+        <p class="text-white pt-3">Copyright © 2023 All Right Reserved</p>
+      </div>
     </footer>
-    <div class="bg-info text-center"><p class="text-white">Copyright © 2023 All Right Reserved</p></div>
-    <script src="js/bootstrap.min.js"></script>
+  
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
@@ -320,5 +444,11 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/app.js"></script>
+    <!-- aos lib -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200, duration: 400 });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
