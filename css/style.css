@@ -11,6 +11,9 @@ section{
     --primary-font:'Roboto', sans-serif;
     --secondary-font: 'Dancing Script', cursive;
 }
+i{
+    color: #d8a64d;
+}
 .best-deals .row{
     border: 2px solid #e6af52;
     margin-top: 20px;
@@ -74,7 +77,7 @@ nav{
     font-family: var(--secondary-font);
     font-weight: 700;
     margin-bottom: -2px;
-    color: rgb(238, 13, 13);
+    color: #d8a64d;
 }
 /* .banner-text{
     padding: 45px;
@@ -119,18 +122,31 @@ nav{
   .footer-section{
     padding-top: 35px;
     padding-bottom: 30px;
-    background-color: #f5c298;
+    background-color: #d8a64d;
   }
   ul li{
     text-align: left;
   }
- 
-  /* form */
+  .social-icons i{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+ .footer-icons li{
+    margin-bottom: 15px;
+ }
+ .useful-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+ }
+  /* contact page */
 
   .form-section{
     margin: 30px auto;
     padding: 25px;
     max-width: 700px;
+    background-image: url('img/formbg.jpg');
 }
 label{
     font-weight: 600;
