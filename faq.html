@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Home Page</title>
+    <title>faq</title>
   </head>
   <body>
     <!-- Navbar section -->
-    <nav class="navbar navbar-expand-lg bg-transparent px-5">
+    <nav class="navbar navbar-expand-lg bg-light px-5">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
         ><img src="img/logo.png" alt=""
@@ -48,66 +48,132 @@
         </div>
     </div>
     </nav>
-
-    <footer class="px-5 footer-section text-white">
-        <div class="overflow-hidden">
-          <div class="row gy-5">
-            <div class="col-md-4 col-12">
-              <div class="p-3">
-                <img src="img/BPT.png" width="100px" alt="" class="mb-2">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Corrupti tenetur enim, non molestias molestiae eum doloribus
-                  alias animi qui dicta accusantium neque exercitationem
-                  voluptatem debitis?
-                </p>
-                <h4 class="">Follow Us</h4>
-                <div class="social-icons ">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                  <i class="fa-brands fa-linkedin-in"></i>
+<!-- faq accrodian -->
+    <div class="container my-5 ">
+        <h1 class="contact-header text-center p-4 ">Frequently Asked Questions</h1>
+        <div class="accordion w-75 mx-auto" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-12">
-              <div class="p-3">
-                <ul class="list-group-flush social-icons footer-icons">
-                  <li class="list-group-item">
-                    <h4 class="border-bottom">Contact Info</h4>
-                  </li>
-                  <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i>09611-600500</li>
-                  <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i>09611-600500</li>
-                  <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i></i>inquiry@oscl.io</li>
-                  <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i>09611-600500 (Hotline)</li>
-                  <li class="list-group-item">  <i class="fa-solid fa-location-dot "></i>
-                    <address class=" d-inline"> 
-                        Hasim Tower (4th floor), Suit A-4, <br>Bir Uttam Mir Shawkat Sarak,<br> 205/1AToejgaon Gulshan Link Road 1208 Dhaka, <br>Dhaka Division, Bangladesh.
-                    </address></li>
-                </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
               </div>
             </div>
-            <div class="col-md-4 col-12">
-              <div class="p-3">
-                <ul class="list-group-flush useful-links">
-                  <li class="list-group-item">
-                    <h4 class="border-bottom">Useful Links</h4>
-                  </li>
-                  <li class="list-group-item"><a href="blog.html">Blogs</a></li>
-                  <li class="list-group-item"><a href="faq.html">FAQ</a></li>
-                  <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
-                  <li class="list-group-item"><a href="privacyandplicies.html">Privacy Policy</a></li>
-                  <li class="list-group-item"><a href="termsandconditions.html">Terms & Conditions</a></li>
-                </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Accordion Item #4
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Accordion Item #5
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
               </div>
             </div>
           </div>
+    </div>
+<!--footer  -->
+<footer class="px-5 footer-section text-white">
+    <div class="overflow-hidden">
+      <div class="row gy-5">
+        <div class="col-md-4 col-12">
+          <div class="p-3">
+            <img src="img/BPT.png" width="100px" alt="" class="mb-2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Corrupti tenetur enim, non molestias molestiae eum doloribus
+              alias animi qui dicta accusantium neque exercitationem
+              voluptatem debitis?
+            </p>
+            <h4 class="">Follow Us</h4>
+            <div class="social-icons ">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
         </div>
-        <div class="text-center pt-5">
-          <p class="text-white pt-3">Copyright © 2023 All Right Reserved</p>
+        <div class="col-md-4 col-12">
+          <div class="p-3">
+            <ul class="list-group-flush social-icons footer-icons">
+              <li class="list-group-item">
+                <h4 class="border-bottom">Contact Info</h4>
+              </li>
+              <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i>09611-600500</li>
+              <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i></i>inquiry@oscl.io</li>
+              <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i></i>inquiry@oscl.io</li>
+              <li class="list-group-item">  <i class="fa-solid fa-location-dot "></i>
+                <address class=" d-inline"> 
+                    Hasim Tower (4th floor), Suit A-4, <br>Bir Uttam Mir Shawkat Sarak,<br> 205/1AToejgaon Gulshan Link Road 1208 Dhaka, <br>Dhaka Division, Bangladesh.
+                </address>
+              </li>
+            </ul>
+          </div>
         </div>
-      </footer>
+        <div class="col-md-4 col-12">
+          <div class="p-3">
+            <ul class="list-group-flush useful-links">
+              <li class="list-group-item">
+                <h4 class="border-bottom">Useful Links</h4>
+              </li>
+              <li class="list-group-item"><a href="blog.html">Blogs</a></li>
+              <li class="list-group-item"><a href="faq.html">FAQ</a></li>
+              <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+              <li class="list-group-item"><a href="privacyandplicies.html">Privacy Policy</a></li>
+              <li class="list-group-item"><a href="termsandconditions.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center pt-5">
+      <p class="text-white pt-3">Copyright © 2023 All Right Reserved</p>
+    </div>
+  </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
