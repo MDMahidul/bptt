@@ -13,6 +13,21 @@
       width: 400px;
     }
 }
+@media only screen and (max-width:1400px){
+    .carousel-container {
+        height: 100%; /* adjust the height to your desired value */
+        width: 60%; /* adjust the width to your desired value */
+      }
+      .carousel-inner .carousel-caption{
+        margin-bottom: 10px; 
+        background-color: #b4afaf8c;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .address-block iframe{
+      width: 400px;
+    }
+}
 @media only screen and (max-width:768px){
     .carousel-container {
         height: 100%; /* adjust the height to your desired value */
@@ -20,6 +35,20 @@
       }
       .carousel-inner .carousel-caption{
         margin-bottom: -150px; 
+        background-color: #b4afaf8c;
+        border-radius: 5px;
+    }
+    .address-block iframe{
+      width: 400px;
+    }
+}
+@media only screen and (max-width:576px){
+    .carousel-container {
+        height: 100%; /* adjust the height to your desired value */
+        width: 80%; /* adjust the width to your desired value */
+      }
+      .carousel-inner .carousel-caption{
+        margin-top: -150px; 
         background-color: #b4afaf8c;
         border-radius: 5px;
     }
