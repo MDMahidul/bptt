@@ -73,16 +73,23 @@ nav{
 .carousel-inner .carousel-item img{
     background-color: linear-gradient(#721e1efa, #eb0909) !important;
 }
+.dancing-font-banner{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    margin-bottom: -2px;
+    color: #f3f3f3;
+}
 .dancing-font{
     font-family: var(--secondary-font);
     font-weight: 700;
     margin-bottom: -2px;
     color: #d8a64d;
 }
-/* .banner-text{
-    padding: 45px;
-    margin-top: 50px;
-} */
+.banner-text{
+    border-right: 2px solid #fff;
+    padding-left: 20px;
+    text-align: left;
+} 
 
 .btn:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
@@ -132,6 +139,9 @@ nav{
     font-size: 18px;
     margin-right: 5px;
   }
+  .social-icons i:hover{
+    color: #2c6532ce;
+  }
  .footer-icons li{
     margin-bottom: 15px;
  }
@@ -140,14 +150,18 @@ nav{
     color: #fff;
     font-weight: bold;
  }
+ .useful-links li a:hover{
+    color: #2c6532cc;
+ }
   /* contact page */
 
-  .form-section{
+.form-section{
     margin: 30px auto;
     padding: 25px;
     max-width: 700px;
-    background-image: url('img/formbg.jpg');
+
 }
+
 label{
     font-weight: 600;
 }
@@ -166,7 +180,9 @@ input::placeholder{
 address{
     align-items: left !important;
 }
-
+.address-block{
+    margin-bottom: 187px;
+}
 /* about us page */
 .about-us-des{
     padding: 25px;
@@ -177,3 +193,58 @@ address{
     margin-top: 25px;
     margin-bottom: 175px;
 }
+
+/* faq section */
+.accordion-button{
+    font-weight: bold;
+}
+.accordion-button:focus {
+    z-index: 3;
+    background-color: #fff;
+    outline: 0!important;
+    color: black;
+    box-shadow: none;
+    border-bottom: 2px solid #d8a64d;
+ }
+ .accordion-button:not(.collapsed){
+    background-color: #d8a64d;
+    color: #fff;
+    
+ }
+
+ /* contact page animation */
+ @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+ @keyframes Opacity {
+    0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+  }
+
+  .block-1,.about-text,.accordion-faq{
+    animation: 0.8s ease-out 0s 1 slideInLeft;
+  }
+  .block-4,.about-img,.faq-img{
+    animation: 0.8s ease-out 0s 1 slideInRight;
+  }
+/*   .contact-form-block{
+    animation: 2s ease-out 0s 1 Opacity;
+  } */

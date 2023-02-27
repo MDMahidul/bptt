@@ -30,12 +30,12 @@ $('.slider').slick({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
-/* include file to another file */
+/* go to page top on pageload */
+$(document).ready(function(){
+  $(window).scrollTop(0);
+});
 
   /* animation js */
-  AOS.init({ offset: 200, duration: 400 });
+  AOS.init({ offset: 200, duration: 400, once:true });
