@@ -245,6 +245,11 @@ address{
   .block-4,.about-img,.faq-img{
     animation: 0.8s ease-out 0s 1 slideInRight;
   }
-/*   .contact-form-block{
-    animation: 2s ease-out 0s 1 Opacity;
-  } */
+/* blog page*/
+.card-text{
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}

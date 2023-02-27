@@ -39,3 +39,5 @@ $(document).ready(function(){
 
   /* animation js */
   AOS.init({ offset: 200, duration: 400, once:true });
+
+
