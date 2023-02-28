@@ -49,9 +49,9 @@
         </div>
     </nav>
 <!-- full blog page -->
-<div class="row container mb-5 py-4">
+<div class="row container mb-5 py-4 mx-auto my-5">
     <div class="col-md-6 col-12">
-        <img id="fullblog-img" src="" alt="">
+        <img id="fullblog-img" src="" alt="" class="w-100">
     </div>
     <div class="col-md-6 col-12">
         <h4 id="full-blog-title"></h4>
@@ -135,5 +135,14 @@
     AOS.init({ offset: 200, duration: 400, once:true });
   </script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    const imgTag =  localStorage.getItem('blog-img');
+    const titleTag =  localStorage.getItem('blog-title');
+    const desTag =  localStorage.getItem('blog-des');
+
+    document.getElementById('fullblog-img').src = imgTag;
+    document.getElementById('full-blog-title').textContent = titleTag;
+    document.getElementById('blog-body').textContent = desTag;
+  </script>
   </body>
 </html>

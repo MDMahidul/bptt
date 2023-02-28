@@ -4,13 +4,29 @@
         width: 60%; /* adjust the width to your desired value */
       }
       .carousel-inner .carousel-caption{
-        margin-bottom: 10px; 
+        margin-bottom: 5px; 
         background-color: #b4afaf8c;
-        padding: 20px;
+        padding: 10px;
         border-radius: 5px;
     }
     .address-block iframe{
       width: 400px;
+    }
+    .banner-header{
+      font-size: 25px;
+    }
+    .banner-des{
+      font-size: 14px;
+    }
+    .dancing-font-banner{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .banner-img{
+      width: 55%;
+    }
+    .uk-img{
+      width: 25%;
     }
 }
 @media only screen and (max-width:1400px){
@@ -34,26 +50,55 @@
         width: 80%; /* adjust the width to your desired value */
       }
       .carousel-inner .carousel-caption{
-        margin-bottom: -150px; 
+        margin-bottom: 20px; 
         background-color: #b4afaf8c;
-        border-radius: 5px;
+        border-radius: 2px;
     }
     .address-block iframe{
       width: 400px;
+    }
+    .banner-header{
+      font-size: 24px;
+    }
+    .banner-des{
+      font-size: 16px;
+    }
+    .dancing-font-banner{
+      font-size: 14px;
+    }
+    .banner-img{
+      width: 55%;
+    }
+    .uk-img{
+      width: 25%;
     }
 }
 @media only screen and (max-width:576px){
     .carousel-container {
-        height: 100%; /* adjust the height to your desired value */
-        width: 80%; /* adjust the width to your desired value */
+        height: 100%; 
+        width: 80%; 
       }
       .carousel-inner .carousel-caption{
-        margin-top: -150px; 
         background-color: #b4afaf8c;
         border-radius: 5px;
     }
     .address-block iframe{
       width: 400px;
+    }
+    .banner-header{
+      font-size: 18px;
+    }
+    .banner-des{
+      font-size: 12px;
+    }
+    .dancing-font-banner{
+      font-size: 14px;
+    }
+    .banner-img{
+      width: 25%;
+    }
+    .uk-img{
+      width: 25%;
     }
 }
 

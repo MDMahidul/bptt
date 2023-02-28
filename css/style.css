@@ -246,7 +246,7 @@ address{
     animation: 0.8s ease-out 0s 1 slideInRight;
   }
 /* blog page*/
-.card-text{
+.blog .card-text{
     width: 300px;
     display: -webkit-box;
     -webkit-box-orient: vertical;

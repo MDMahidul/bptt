@@ -1,26 +1,49 @@
+/* const cardsContainers = document.getElementsByClassName("card");
+  for(const cardsContainer of cardsContainers){
+    cardsContainer.addEventListener('click',(event)=>{
+      if(event.target.classList.contains('read-more')){
+        const blogTitle = document.getElementById('blog-title').innerText;
+        const blogBody =  document.getElementById('blog-body').innerText;
+       const imgTag =  document.getElementById('blog-img').getAttribute('src');
 
-  /* blog read more button */
-//   const readMoreBtns = document.getElementsByClassName('read-more');
-//   for(const readMoreBtn of readMoreBtns){
-//     readMoreBtn.addEventListener('click',()=>{
-//         //get the blog-title
-//         const blogTitle = document.getElementById('blog-title').innerHTML;
-//         const blogBody =  document.getElementById('blog-body').innerHTML;
-//         const imgTag =  document.getElementById('blog-img').getAttribute("src");
+
+       
+        localStorage.setItem('blog-title',blogTitle);
+        localStorage.setItem('blog-des',blogBody);
+        localStorage.setItem('blog-img',imgTag);
+
+         window.location.href="fullblogpage.html";
+      }
+    })
+  }
+ */
+
+/* const cardGroups =  document.getElementsByClassName("card-group");
+cardGroups.forEach(cardGroup=>{
+  const card = document.getElementsByClassName('card')
+  card.addEventListener('click',(event)=>{
+    if(event.target.classList.contains('read-more')){
+      const blogTitle = document.getElementById('blog-title').innerText;
+      const blogBody =  document.getElementById('blog-body').innerText;
+     const imgTag =  document.getElementById('blog-img').getAttribute('src');
   
-//         /* set data to full blog page from the blog page */
-//         const fullBlogImgtag = document.getElementById('fullblog-img');
-//         fullBlogImgtag.setAttribute('src',imgTag);
-//         const fullBlogTitle =  document.getElementById('blog-modal-title');
-//         fullBlogTitle.innerText = blogTitle;
-//     })
-//   }
-  const readMoreBtns = document.getElementsByClassName('read-more');
+  
+     
+      localStorage.setItem('blog-title',blogTitle);
+      localStorage.setItem('blog-des',blogBody);
+      localStorage.setItem('blog-img',imgTag);
+  
+       window.location.href="fullblogpage.html";
+    }
+  })
+}) */
+
+const readMoreBtns = document.getElementsByClassName('read-more');
   for(const readMoreBtn of readMoreBtns){
     readMoreBtn.addEventListener('click',(event)=>{
         
         //get the blog-title
-        const card = document.querySelector('.card');
+        const card = event.target.closest('.card');
         const modal = document.querySelector('#exampleModal');
         const modalImage = document.querySelector('#modal-image');
         const modalTitle = document.querySelector('h1');
