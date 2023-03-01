@@ -6,6 +6,10 @@
 }
 section{
     margin-bottom: 100px;
+    margin:0px 70px 100px 70px;
+}
+footer{
+    padding: 0px 60px 0px 60px;
 }
 :root{
     --primary-font:'Roboto', sans-serif;
@@ -37,6 +41,12 @@ i{
 }
 nav{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 0px 50px 0px 50px !important;
+}
+.disabled{
+    border: 2px solid #d8a64d;
+    border-radius: 10px;
+    text-align: center;
 }
 .navbar-nav  li a{
     color: #4b4848;
@@ -62,12 +72,11 @@ nav{
 .carousel-inner .carousel-caption{
     margin-bottom: 100px; 
     background-color: #b4afaf8c;
-    padding: 100px;
+    /* padding: 100px; */
     border-radius: 5px;
 }
 .carousel-container {
-    height: 100%; /* adjust the height to your desired value */
-    width: 78%; /* adjust the width to your desired value */
+    max-width: 78%; /* adjust the width to your desired value */
   }
   
 .carousel-inner .carousel-item img{
@@ -85,11 +94,7 @@ nav{
     margin-bottom: -2px;
     color: #d8a64d;
 }
-.banner-text{
-    border-right: 2px solid #fff;
-    padding-left: 20px;
-    text-align: left;
-} 
+
 
 .btn:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
@@ -105,6 +110,9 @@ nav{
 }
 .feature-trips .card:hover{
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.534);
+}
+.feature-text,.packeges-text{
+    width: 50%;
 }
 /* cards slider */
 .packege-card{
@@ -161,6 +169,9 @@ nav{
     max-width: 700px;
 
 }
+#contact-map{
+    max-width: 800px !important;
+}
 
 label{
     font-weight: 600;
@@ -174,7 +185,24 @@ input::placeholder{
 .contact-header{
     font-weight: bold;
     text-align: center;
+    margin-bottom: 48px;
 }
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 55vh;
+    border: none;
+  }
+  .map-container {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
 
 /* address design */
 address{
@@ -184,9 +212,17 @@ address{
     margin-bottom: 187px;
 }
 /* about us page */
+.about-us{
+    width: 85% !important;
+}
 .about-us-des{
     padding: 25px;
     margin-bottom: 55px;
+    text-align: justify;
+}
+
+.about-us img{
+    max-width: 750px;
 }
 
 .accordion{
@@ -252,4 +288,7 @@ address{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+#blog-img img{
+    border-radius: 10px !important;
 }
