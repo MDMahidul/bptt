@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>privacy policy</title>
+    <title>BPTT-Privacy policy</title>
   </head>
   <body>
   <!-- Navbar section -->
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"
+      <a class="navbar-brand" href="index.php"
         ><img src="img/logo.png" alt=""
       /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
@@ -30,26 +30,29 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="index.php">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT US</a>
+            <a class="nav-link" href="ourservices.php">OUR SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
+            <a class="nav-link" href="about.php">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
+            <a class="nav-link" href="contact.php">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.php">FAQ</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link disabled text-dark" href="#"><i class="fa-solid fa-phone me-2"></i>+8809611-600500</a>
+            <a class="nav-link disabled text-dark" href="#"><i class="fa-solid fa-phone me-2"></i>+88 01914-243061</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 <!-- privacy policy main section -->
-
+<main  class="margin-x">
 <h1 class="contact-header">Privacy Policy for Best Price Tours and Ticket</h1>
 <div class="container  mb-5 privacy-des" data-aos="slide-left">
   <p>At BPTT, accessible from https://www.bpttbd.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by BPTT and how we use it.</p>
@@ -140,67 +143,10 @@
 
   <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
 </div>
-
+</main>
 <!-- end -->
-<footer class=" footer-section text-white">
-  <div class="overflow-hidden">
-    <div class="row gy-5">
-      <div class="col-md-4 col-12">
-        <div class="p-3">
-          <img src="img/BPT.png" width="100px" alt="" class="mb-2">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Corrupti tenetur enim, non molestias molestiae eum doloribus
-            alias animi qui dicta accusantium neque exercitationem
-            voluptatem debitis?
-          </p>
-          <h4 class="">Follow Us</h4>
-          <div class="social-icons ">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12">
-        <div class="footer-sec">
-          <ul class="list-group-flush social-icons footer-icons">
-            <li class="list-group-item">
-              <h4 class="border-bottom">Contact Info</h4>
-            </li>
-            <li class="list-group-item"><i class="fa-solid fa-phone me-2"></i>09611-600500</li>
-            <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i></i>inquiry@oscl.io</li>
-            <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i></i>inquiry@oscl.io</li>
-            <li class="list-group-item">  <i class="fa-solid fa-location-dot "></i>
-              <address class=" d-inline"> 
-                  BPTT, Hasim Tower (4th floor), Suit A-4, <br>Bir Uttam Mir Shawkat Sarak,<br> 205/1AToejgaon Gulshan Link Road 1208 Dhaka, <br>Dhaka Division, Bangladesh.
-              </address>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4 col-12">
-        <div class="footer-sec">
-          <ul class="list-group-flush useful-links">
-            <li class="list-group-item">
-              <h4 class="border-bottom">Useful Links</h4>
-            </li>
-            <li class="list-group-item"><a href="blog.html">Blogs</a></li>
-            <li class="list-group-item"><a href="faq.html">FAQ</a></li>
-            <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
-            <li class="list-group-item"><a href="privacyandplicies.html">Privacy Policy</a></li>
-            <li class="list-group-item"><a href="termsandconditions.html">Terms & Conditions</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-center pt-5">
-    <p class="text-white pt-3">Copyright © 2023 All Right Reserved</p>
-  </div>
-</footer>
+  <!-- footer -->
+  <?php include "footer.php" ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"

@@ -5,7 +5,6 @@
     font-family: var(--primary-font);
 }
 section{
-    margin-bottom: 100px;
     margin:0px 70px 100px 70px;
 }
 footer{
@@ -18,12 +17,15 @@ footer{
 i{
     color: #d8a64d;
 }
-.best-deals .row{
+.our-services .row{
     border: 2px solid #e6af52;
     margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
     background-color: rgba(207, 139, 139, 0.164);
+}
+.our-services{
+    margin-top: 80px;
 }
 
 .btn-primary{
@@ -69,6 +71,9 @@ nav{
     background-attachment: fixed;
 } */
 /*  carousel */
+.slider-header{
+    margin-top: 70px;
+}
 .carousel-inner .carousel-caption{
     margin-bottom: 100px; 
     background-color: #b4afaf8c;
@@ -95,7 +100,9 @@ nav{
     color: #d8a64d;
 }
 
-
+.section-header{
+    color: #d8a64d; 
+}
 .btn:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
     transition: .05s ease-out;
@@ -112,7 +119,7 @@ nav{
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.534);
 }
 .feature-text,.packeges-text{
-    width: 50%;
+    width: 70%;
 }
 /* cards slider */
 .packege-card{
@@ -185,7 +192,8 @@ input::placeholder{
 .contact-header{
     font-weight: bold;
     text-align: center;
-    margin:40px 0px 40px 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .responsive-iframe {
     position: absolute;
@@ -208,9 +216,9 @@ input::placeholder{
 address{
     align-items: left !important;
 }
-.address-block{
-    margin-bottom: 187px;
-}
+/* .address-block{
+    margin-bottom: 50px;
+} */
 /* about us page */
 .about-us{
     width: 85% !important;
@@ -220,7 +228,10 @@ address{
     margin-bottom: 55px;
     text-align: justify;
 }
-
+.about-us-des-service{
+    padding: 0px 25px 0px 25px;
+    text-align: justify;
+}
 .about-us img{
     max-width: 750px;
 }
@@ -291,4 +302,14 @@ address{
 }
 #blog-img img{
     border-radius: 10px !important;
+}
+.ptag-des{
+    text-align: justify !important;
+}
+/* services */
+.services-des{
+    margin-top: 50px !important;
+}
+.margin-x{
+    margin-top: 120px !important;
 }
