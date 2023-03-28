@@ -1,22 +1,11 @@
+<!-- db connection -->
+<?php
+
+    include_once 'db.php';
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="img/BPT.png" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <script src="https://kit.fontawesome.com/0500892bc1.js" crossorigin="anonymous" ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>BPTT-Blog</title>
-  </head><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -64,153 +53,34 @@
 <!-- modal end -->
 <div class="container mt-3 py-5">
  <div class="row" data-aos="slide-up">
-  <div class="col-md-6 col-12">
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/bali.webp" class="img-fluid rounded-start p-3 rounded" alt="">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Travel to Bali</h5>
-              <p class="card-text" id="blog-body">One of the most well-liked travel locations in Southeast Asia is Bali, which serves as a hub for yogis, hippies, and digital nomads. When I started going in 2010, it was well-liked, and popularity has only grown since then.<br><br>
-  
-                Despite the fact that some areas of Bali experience overtourism (I'm looking at you, Kuta Beach), there are still vast areas of the island where you can avoid the crowds and take in the picturesque scenery.<br><br>
-                
-                Whatever your interests or budget, there are a ton of fantastic things to see and do on this island. Popular activities in Bali include hiking, surfing, tanning, discovering the local cuisine, taking a cooking class, spotting wildlife, visiting hot springs, and simply unwinding.One of the most well-liked travel locations in Southeast Asia is Bali, which serves as a hub for yogis, hippies, and digital nomads. When I started going in 2010, it was well-liked, and popularity has only grown since then.<br><br>
-  
-                Despite the fact that some areas of Bali experience overtourism (I'm looking at you, Kuta Beach), there are still vast areas of the island where you can avoid the crowds and take in the picturesque scenery.<br><br>
-                
-                Whatever your interests or budget, there are a ton of fantastic things to see and do on this island. Popular activities in Bali include hiking, surfing, tanning, discovering the local cuisine, taking a cooking class, spotting wildlife, visiting hot springs, and simply unwinding.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/singapore.webp" class="img-fluid rounded-start p-3 " alt="singapore">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Singapore Merlion Park</h5>
-              <p class="card-text" id="blog-body">Travelers familiar with Singapore will already know the city's icon, the mythical Merlion with the body of a fish and the head of a lion.<br><br>
-  
-                One of his most famous depictions of this iconic symbol is the statue in Merlion Park, a Wan He Fullerton scenic spot near Singapore's central business district.<br><br>
-                
-                Before visiting this beautiful place, you may want to learn more about the symbolism behind the Merlion and its interdependence with our country's history.
-                That the Merlion is part lion and part fish is a story deeper than skin (or stone).
-                The Merlion's fish-like body symbolizes Singapore's origins as a fishing village. Temasek is derived from the same root as the word Tasek (“Lake” in Malay). The head of the statue represents the original name of the city of Singapore (Lion City in Sanskrit). According to legend, San Nira Utama (Prince of Srivijayan from Palembang) landed on our shores in the midst of a sea storm.<br><br>
-                
-                Near the mouth of the Singapore River, the Prince discovered a strange creature, identified it as a lion, and gave Singapore its name.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/PetronasTowers.webp" class="img-fluid rounded-start p-3 " alt="PetronasTowers">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Malaysia Petronas Towers</h5>
-              <p class="card-text" id="blog-body">Petronas Towers is a pair of iconic skyscrapers located in Kuala Lumpur, Malaysia. Completed in 1998, they were the tallest buildings in the world at that time, surpassing the previous record held by the Sears Tower in Chicago.<br><br>
+  <?php
+            $sql = "SELECT * FROM blog";
+            $result = mysqli_query($conn, $sql);
+            
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "
+                    <div class='card-group '>
+                    <div class='card mb-3'>
+                        <div class='col-md-4 my-auto '>
+                          <img id='blog-img' src=".$row['b_image']." class='img-fluid rounded-start p-3 rounded' alt='>
+                        </div>
+                        <div class='col-md-8'>
+                          <div class='card-body blog'>
+                            <h5 class='card-title' id='blog-title'>".$row['b_title']."</h5>
+                            <p class='card-text' id='blog-body'>".$row['b_long_des']."</p>
+                            <button data-bs-toggle='modal' data-bs-target='#exampleModal' class='btn btn-primary read-more '>READ MORE</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                    ";
+                  }
+                }else {
+                    echo "0 results";
+                }
+        ?> 
 
-                Designed by Argentine-American architect Cesar Pelli, the Petronas Towers are a symbol of Malaysia's rapid modernization and economic growth. The towers are 88 stories tall and stand at a height of 1,483 feet (452 meters), with a distinctive postmodern style featuring Islamic motifs.<br><br>
-                
-                The towers are home to the headquarters of the national oil company of Malaysia, Petronas, and many other companies. They also house a shopping mall, a concert hall, and an observation deck on the 86th floor that offers a stunning panoramic view of the city.<br><br>
-                
-                The construction of the towers was a significant feat of engineering, with a unique tube-in-tube structural design that makes them exceptionally strong and able to withstand strong winds and earthquakes. The towers are connected by a skybridge on the 41st and 42nd floors, which provides a means of escape in case of emergencies.<br><br>
-                
-                Today, the Petronas Towers remain a beloved symbol of Malaysia and a popular tourist attraction, attracting millions of visitors each year. They have also become an important cultural landmark and have been featured in numerous movies, TV shows, and advertisements around the world.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/venice.webp" class="img-fluid rounded-start p-3 " alt="venice">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Beauty Of venice</h5>
-              <p class="card-text" id="blog-body">Venice, Italy is a city that has captured the hearts of millions of people around the world for centuries. Known as the “City of Water” or “Floating City,” Venice is built on more than 100 small islands in the Venetian Lagoon. This romantic and picturesque city is famous for its canals, gondolas, bridges, architecture, and art, making it a top tourist destination in Italy and Europe.<br><br>
-
-                Venice's history dates back to the 5th century, when the Veneti people settled on the islands to escape the invading barbarians. Over time, Venice became an important maritime power and commercial center, trading with the Byzantine Empire, the Middle East, and Europe. Venice's wealth and power are reflected in its stunning architecture, which features Gothic, Renaissance, and Baroque styles, as well as its art, which includes works by famous painters such as Titian, Tintoretto, and Canaletto.<br><br>
-                
-                One of the most iconic features of Venice is its canals, which are used as the city's main transportation network. Visitors can take a romantic gondola ride along the canals to see the city from a unique perspective, passing under the famous Rialto Bridge and admiring the elegant palaces and churches that line the waterways. Alternatively, visitors can take a vaporetto, or water bus, to explore the different neighborhoods of Venice, including the famous St. Mark's Square.<br><br>
-                
-                St. Mark's Square is the heart of Venice, featuring the beautiful St. Mark's Basilica, Doge's Palace, and the Campanile bell tower. Visitors can climb to the top of the Campanile to enjoy stunning views of the city and the lagoon. The Doge's Palace, which served as the residence of the Doge of Venice and the seat of government, is a masterpiece of Gothic architecture and features exquisite works of art, including paintings by Veronese and Tintoretto.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 col-12">
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/niagara.webp" class="img-fluid rounded-start p-3 " alt="niagara">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Niagara Falls</h5>
-              <p class="card-text" id="blog-body">Niagara Falls is a breathtaking natural wonder located on the Niagara River, which serves as the border between the United States and Canada. The falls consist of three separate waterfalls, the American Falls, the Bridal Veil Falls, and the Horseshoe Falls, which collectively form the largest waterfall system in the world in terms of volume.<br><br>
-
-                The Horseshoe Falls, which are located on the Canadian side, are the most well-known and popular of the three waterfalls, attracting millions of visitors each year. The falls are 167 feet (51 meters) high and span 2,600 feet (792 meters) across, creating a powerful roar and a misty spray that can be seen and felt from miles away.<br><br>
-                
-                The history of Niagara Falls dates back over 12,000 years, when it was formed during the last ice age. The falls have since played an important role in the development of the surrounding area, serving as a source of hydroelectric power and a major tourist destination.<br><br>
-                
-                Visitors to Niagara Falls can enjoy a wide range of activities, including boat tours, hiking trails, and scenic overlooks. The area is also home to many restaurants, hotels, and casinos, making it a popular destination for both families and couples.<br><br>
-                
-                Despite its popularity, Niagara Falls remains a natural wonder that is protected by strict conservation laws. Efforts are constantly being made to preserve and protect the falls and the surrounding ecosystem, ensuring that future generations will be able to enjoy this incredible natural wonder for years to come.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/eiffel.webp" class="img-fluid rounded-start p-3 " alt="eiffel">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">City of loves and lights</h5>
-              <p class="card-text" id="blog-body">The Eiffel Tower is an iconic symbol of Paris, France and one of the most recognizable landmarks in the world. Named after its designer, Gustave Eiffel, the tower was built in 1889 as the entrance arch to the World's Fair and has since become one of the most visited attractions in Paris.<br><br>
-
-                The tower stands at 1,063 feet (324 meters) tall, including its antenna, and was the tallest man-made structure in the world at the time of its construction. It consists of four massive lattice steel columns that come together to form a single central pylon, with two observation decks at different heights that offer stunning views of the city.<br><br>
-                
-                The Eiffel Tower has a rich history and has played an important role in France's cultural heritage. It was initially criticized by some as an eyesore, but over time it has become a beloved symbol of Paris and French engineering prowess.<br><br>
-                
-                Today, the Eiffel Tower remains a popular tourist attraction, with millions of visitors from around the world coming to see it every year. It has also been the site of numerous cultural and political events, including the lighting of the Olympic flame in 1924 and the visit of Pope John Paul II in 1980.<br><br>
-                
-                In addition to its impressive stature, the Eiffel Tower is also an engineering marvel, with a design that allows it to sway slightly in the wind and a complex lighting system that illuminates it at night in a spectacular display of color and light. Whether viewed from afar or up close, the Eiffel Tower is a true masterpiece of human achievement and a must-see destination for any traveler visiting Paris.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
   </div>
 </div>
 </main>
@@ -313,190 +183,6 @@
                 Despite the fact that some areas of Bali experience overtourism (I'm looking at you, Kuta Beach), there are still vast areas of the island where you can avoid the crowds and take in the picturesque scenery.<br><br>
                 
                 Whatever your interests or budget, there are a ton of fantastic things to see and do on this island. Popular activities in Bali include hiking, surfing, tanning, discovering the local cuisine, taking a cooking class, spotting wildlife, visiting hot springs, and simply unwinding.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/singapore.jpg" class="img-fluid rounded-start p-3 " alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Singapore Merlion Park</h5>
-              <p class="card-text" id="blog-body">Travelers familiar with Singapore will already know the city's icon, the mythical Merlion with the body of a fish and the head of a lion.<br><br>
-  
-                One of his most famous depictions of this iconic symbol is the statue in Merlion Park, a Wan He Fullerton scenic spot near Singapore's central business district.<br><br>
-                
-                Before visiting this beautiful place, you may want to learn more about the symbolism behind the Merlion and its interdependence with our country's history.
-                That the Merlion is part lion and part fish is a story deeper than skin (or stone).
-                The Merlion's fish-like body symbolizes Singapore's origins as a fishing village. Temasek is derived from the same root as the word Tasek (“Lake” in Malay). The head of the statue represents the original name of the city of Singapore (Lion City in Sanskrit). According to legend, San Nira Utama (Prince of Srivijayan from Palembang) landed on our shores in the midst of a sea storm.<br><br>
-                
-                Near the mouth of the Singapore River, the Prince discovered a strange creature, identified it as a lion, and gave Singapore its name.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/PetronasTowers.jpg" class="img-fluid rounded-start p-3 " alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Malaysia Petronas Towers</h5>
-              <p class="card-text" id="blog-body">Petronas Towers is a pair of iconic skyscrapers located in Kuala Lumpur, Malaysia. Completed in 1998, they were the tallest buildings in the world at that time, surpassing the previous record held by the Sears Tower in Chicago.<br><br>
-
-                Designed by Argentine-American architect Cesar Pelli, the Petronas Towers are a symbol of Malaysia's rapid modernization and economic growth. The towers are 88 stories tall and stand at a height of 1,483 feet (452 meters), with a distinctive postmodern style featuring Islamic motifs.<br><br>
-                
-                The towers are home to the headquarters of the national oil company of Malaysia, Petronas, and many other companies. They also house a shopping mall, a concert hall, and an observation deck on the 86th floor that offers a stunning panoramic view of the city.<br><br>
-                
-                The construction of the towers was a significant feat of engineering, with a unique tube-in-tube structural design that makes them exceptionally strong and able to withstand strong winds and earthquakes. The towers are connected by a skybridge on the 41st and 42nd floors, which provides a means of escape in case of emergencies.<br><br>
-                
-                Today, the Petronas Towers remain a beloved symbol of Malaysia and a popular tourist attraction, attracting millions of visitors each year. They have also become an important cultural landmark and have been featured in numerous movies, TV shows, and advertisements around the world.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/venice.jpg" class="img-fluid rounded-start p-3 " alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Beauty Of venice</h5>
-              <p class="card-text" id="blog-body">Venice, Italy is a city that has captured the hearts of millions of people around the world for centuries. Known as the “City of Water” or “Floating City,” Venice is built on more than 100 small islands in the Venetian Lagoon. This romantic and picturesque city is famous for its canals, gondolas, bridges, architecture, and art, making it a top tourist destination in Italy and Europe.<br><br>
-
-                Venice's history dates back to the 5th century, when the Veneti people settled on the islands to escape the invading barbarians. Over time, Venice became an important maritime power and commercial center, trading with the Byzantine Empire, the Middle East, and Europe. Venice's wealth and power are reflected in its stunning architecture, which features Gothic, Renaissance, and Baroque styles, as well as its art, which includes works by famous painters such as Titian, Tintoretto, and Canaletto.<br><br>
-                
-                One of the most iconic features of Venice is its canals, which are used as the city's main transportation network. Visitors can take a romantic gondola ride along the canals to see the city from a unique perspective, passing under the famous Rialto Bridge and admiring the elegant palaces and churches that line the waterways. Alternatively, visitors can take a vaporetto, or water bus, to explore the different neighborhoods of Venice, including the famous St. Mark's Square.<br><br>
-                
-                St. Mark's Square is the heart of Venice, featuring the beautiful St. Mark's Basilica, Doge's Palace, and the Campanile bell tower. Visitors can climb to the top of the Campanile to enjoy stunning views of the city and the lagoon. The Doge's Palace, which served as the residence of the Doge of Venice and the seat of government, is a masterpiece of Gothic architecture and features exquisite works of art, including paintings by Veronese and Tintoretto.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 col-12" data-aos="slide-left">
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/ukstudy.jpg" class="img-fluid rounded-start p-3 w-75" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Study In United Kingdom</h5>
-              <p class="card-text" id="blog-body">🎓𝗦𝘁𝘂𝗱𝘆 𝗶𝗻 𝗖𝗲𝗻𝘁𝗿𝗮𝗹 𝗟𝗼𝗻𝗱𝗼𝗻/𝗨𝗞  <br><br>
-                👉 Apply for April / May / Sep 2023 Intake.<br>
-                👉 Apply & Get your Quick Offer & CAS Letter.<br>
-                👉 Study Permit Granted.<br>
-                👉 Study with MOI Letter only.<br>
-                👉 OIETC/Duolingo accepted.<br>
-                👉 No Need IELTS.<br>
-                👉 Not over 02/03 years before Bachelor/Master with Medium of Study in English.<br><br>
-                𝗛𝗼𝘁𝗹𝗶𝗻𝗲: 09611600500<br>
-                𝗖𝗮𝗹𝗹 𝘂𝘀:<br>
-                +8801914243053<br>
-                +8801914243054<br>
-                +8801914243055<br><br>
-                Email: inquiry@oscl.io<br>
-                Visit us: <a href="https://oscl.io/?fbclid=IwAR1QzvDP-6hwry2WP0Fb8E7zw8iqKRPRjgInL-OLGzPYQyiRNIrI7pP2mx0"> www.oscl.io</a><br>
-                Address: Hashim Tower (4th Floor), Suite A-4, Bir Uttam Mir Shawkat Sarak, 205/1A Tejgaon Gulshan Link Road, Dhaka 1208</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/ausstudy.jpg" class="img-fluid rounded-start p-3 w-75" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Study In Australia</h5>
-              <p class="card-text" id="blog-body">🎓𝐒𝐭𝐮𝐝𝐲 𝐢𝐧 𝐀𝐮𝐬𝐭𝐫𝐚𝐥𝐢𝐚 <br>
-                Apply for April / August / Sep 2023 Intake.<br>
-                Apply & Get your Quick Study Permit in Australia.<br><br>
-                𝗕𝗲𝗻𝗲𝗳𝗶𝘁𝘀 𝗼𝗳 𝗗𝗲𝘀𝘁𝗶𝗻𝗮𝘁𝗶𝗼𝗻 𝘁𝗼 𝗔𝘂𝘀𝘁𝗿𝗮𝗹𝗶𝗮<br>
-                ✅ Quick Offer & Admission.<br>
-                ✅ Enrollment (Coe) Letter within 03 Days.<br>
-                ✅ Fly to Australia within 25 Days.<br>
-                ✅ Unlimited Part Time Job Opportunities.<br>
-                ✅ Choose your option with ranked universities/colleges.<br>
-                ✅ Grab your goal directly through University Representative.<br><br>
-                𝗛𝗼𝘁𝗹𝗶𝗻𝗲: 09611600500<br>
-                𝗖𝗮𝗹𝗹 𝘂𝘀:<br>
-                +8801914243053<br>
-                +8801914243054<br>
-                +8801914243055<br><br>
-                Email: inquiry@oscl.io<br>
-                Visit us: <a href="https://oscl.io/?fbclid=IwAR1QzvDP-6hwry2WP0Fb8E7zw8iqKRPRjgInL-OLGzPYQyiRNIrI7pP2mx0"> www.oscl.io</a><br>
-                Address: Hashim Tower (4th Floor), Suite A-4, Bir Uttam Mir Shawkat Sarak, 205/1A Tejgaon Gulshan Link Road, Dhaka 1208</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/niagara.jpg" class="img-fluid rounded-start p-3 " alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Niagara Falls</h5>
-              <p class="card-text" id="blog-body">Niagara Falls is a breathtaking natural wonder located on the Niagara River, which serves as the border between the United States and Canada. The falls consist of three separate waterfalls, the American Falls, the Bridal Veil Falls, and the Horseshoe Falls, which collectively form the largest waterfall system in the world in terms of volume.<br><br>
-
-                The Horseshoe Falls, which are located on the Canadian side, are the most well-known and popular of the three waterfalls, attracting millions of visitors each year. The falls are 167 feet (51 meters) high and span 2,600 feet (792 meters) across, creating a powerful roar and a misty spray that can be seen and felt from miles away.<br><br>
-                
-                The history of Niagara Falls dates back over 12,000 years, when it was formed during the last ice age. The falls have since played an important role in the development of the surrounding area, serving as a source of hydroelectric power and a major tourist destination.<br><br>
-                
-                Visitors to Niagara Falls can enjoy a wide range of activities, including boat tours, hiking trails, and scenic overlooks. The area is also home to many restaurants, hotels, and casinos, making it a popular destination for both families and couples.<br><br>
-                
-                Despite its popularity, Niagara Falls remains a natural wonder that is protected by strict conservation laws. Efforts are constantly being made to preserve and protect the falls and the surrounding ecosystem, ensuring that future generations will be able to enjoy this incredible natural wonder for years to come.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/eiffel.jpg" class="img-fluid rounded-start p-3 " alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">City of loves and lights</h5>
-              <p class="card-text" id="blog-body">The Eiffel Tower is an iconic symbol of Paris, France and one of the most recognizable landmarks in the world. Named after its designer, Gustave Eiffel, the tower was built in 1889 as the entrance arch to the World's Fair and has since become one of the most visited attractions in Paris.<br><br>
-
-                The tower stands at 1,063 feet (324 meters) tall, including its antenna, and was the tallest man-made structure in the world at the time of its construction. It consists of four massive lattice steel columns that come together to form a single central pylon, with two observation decks at different heights that offer stunning views of the city.<br><br>
-                
-                The Eiffel Tower has a rich history and has played an important role in France's cultural heritage. It was initially criticized by some as an eyesore, but over time it has become a beloved symbol of Paris and French engineering prowess.<br><br>
-                
-                Today, the Eiffel Tower remains a popular tourist attraction, with millions of visitors from around the world coming to see it every year. It has also been the site of numerous cultural and political events, including the lighting of the Olympic flame in 1924 and the visit of Pope John Paul II in 1980.<br><br>
-                
-                In addition to its impressive stature, the Eiffel Tower is also an engineering marvel, with a design that allows it to sway slightly in the wind and a complex lighting system that illuminates it at night in a spectacular display of color and light. Whether viewed from afar or up close, the Eiffel Tower is a true masterpiece of human achievement and a must-see destination for any traveler visiting Paris.</p>
               <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
             </div>
           </div>

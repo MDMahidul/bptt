@@ -1,3 +1,10 @@
+<!-- db connection -->
+<?php
+
+    include_once 'db.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,47 +151,33 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
         <p class=""> Best Price Tours and Ticket-BPTT is a company that specializes in providing recruitment services for foreign workers. Our company has been in operation for several years and has helped many businesses to fill various positions with skilled and qualified foreign workers. Our primary goal is to assist businesses to bridge the gap in the labor market by providing a pool of skilled workers who are ready to work in various sectors. </p>
       </div>
       <div class="row" data-aos="slide-up">
-        <div class="col-md-3 col-12 mb-3 mt-3">
-          <div class="card">
-            <img src="img/services/migrate.webp" class="card-img-top" alt="migration" />
-            <div class="card-body">
-              <h5 class="card-title">Migration/ Immigration Services</h5>
-              <p class="card-text">BPTT provides migration and immigration services to foreign workers who are interested in working in various countries.</p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-12 mb-3 mt-3">
-          <div class="card">
-            <img src="img/services/job.webp" class="card-img-top" alt="job" />
-            <div class="card-body">
-              <h5 class="card-title">Job Visa Services</h5>
-              <p class="card-text"> BPTT also provides job visa services to foreign workers who are interested in working in various countries. </p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mb-3 mt-3">
-          <div class="card">
-            <img src="img/services/travel.webp" class="card-img-top" alt="travel" />
-            <div class="card-body">
-              <h5 class="card-title">Air Ticket Services</h5>
-              <p class="card-text">BPTT provides air ticket services to our clients. We work with reputable airlines to ensure that our clients get the best deals on air tickets.</p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-12 mb-3 mt-3">
-          <div class="card">
-            <img src="img/services/travelcard.webp" class="card-img-top" alt="tour" />
-            <div class="card-body">
-              <h5 class="card-title">Tour Program Coordinate Services</h5>
-              <p class="card-text">BPTT provides tour program coordination services to our clients. We work with reputable airlines to ensure that our clients get the best deals. </p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
+        <?php
+            $sql = "SELECT * FROM services";
+            $result = mysqli_query($conn, $sql);
+            
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "
+                    <div class='col-md-6 col-lg-3 col-12 mb-3 mt-3'>
+                    <div class='card'>
+                      <img src=".$row['s_image']." class='card-img-top' alt='migration' />
+                      <div class='card-body'>
+                        <h5 class='card-title'>".$row['s_title']."</h5>
+                        <p class='card-text'>".$row['s_short_des']."</p>
+                       <div class='d-flex justify-content-between align-itmes-center'>
+                        <a class='btn btn-primary' href = 'appointment.php';>BOOK APPOINTMENT</a>
+                        <a class='outline-btn' href = 'servicesdetails.php?id=".$row['id']."';>Learn More</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                    ";
+                  }
+                }else {
+                    echo "0 results";
+                }
+        ?>
+        
       </div>
     </section>
     <!-- why choose us section -->
@@ -213,78 +206,30 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
         <h3><span style="color: #2c6532ce;">Offerd Job Opportunites</span></h3>
       </div>
       <div class="row autoPlay row-cols-md-12 g-4" data-aos="slide-up">
-        <div class="col-12 text-center">
-          <div class="card job-card">
-          <img src="img/job/driver.webp" class="card-img-top" alt="Driving" />
-            <div class="card-body">
-            <h5 class="card-title">Driving</h5>
-            <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/nurse.webp" class="card-img-top" alt="Nursing" />
-            <div class="card-body">
-              <h5 class="card-title">Nursing</h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/tech.webp" class="card-img-top" alt="Technician" />
-            <div class="card-body">
-              <h5 class="card-title">Technician </h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/welder.webp" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Welder</h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/farmer.webp" class="card-img-top" alt="Farmer" />
-            <div class="card-body">
-              <h5 class="card-title">Farmer</h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/fisher.webp" class="card-img-top" alt="Fisherman" />
-            <div class="card-body">
-              <h5 class="card-title">Fisherman</h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/eng.webp" class="card-img-top" alt="Engineer" />
-            <div class="card-body">
-              <h5 class="card-title">Engineer</h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 text-center">
-          <div class="card job-card">
-            <img src="img/job/cleaner.webp" class="card-img-top" alt="Cleaner" />
-            <div class="card-body">
-              <h5 class="card-title">Cleaner</h5>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
+
+        <?php
+            $sql = "SELECT * FROM job";
+            $result = mysqli_query($conn, $sql);
+            
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "
+                    <div class='col-12 text-center'>
+                      <div class='card job-card'>
+                       <img src=".$row['j_image']." class='card-img-top' alt='Driving' />
+                        <div class='card-body'>
+                          <h5 class='card-title'>".$row['j_title']."</h5>
+                          <a class='outline-btn' href='appointment.php'>LEARN MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                    ";
+                  }
+                }else {
+                    echo "0 results";
+                }
+        ?>  
+ 
       </div>
     </section>
     <!-- feature trips -->
@@ -295,46 +240,29 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
         <h3><span style="color: #2c6532ce;">Feature Trips</span></h3>
       </div>
       <div class="row row-cols-1 row-cols-md-4 g-4" id="scroll-content" data-aos="slide-up">
-        <div class="col">
-          <div class="card">
-            <img src="img/trips/maldives.webp" class="card-img-top" alt="maldives" />
-            <div class="card-body">
-              <h5 class="card-title">Maldives</h5>
-              <p class="card-text">Maldives is a popular tourist destination, known for its pristine beaches, crystal-clear waters, and vibrant marine life. </p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/trips/eiffel.webp" class="card-img-top" alt="eiffel tower" />
-            <div class="card-body">
-              <h5 class="card-title">Paris</h5>
-              <p class="card-text">The Eiffel Tower is a popular tourist destination in Paris, France. It was built in 1889 and stands at 324 meters tall.</p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/trips/venice.webp" class="card-img-top" alt="venice" />
-            <div class="card-body">
-              <h5 class="card-title">Venice </h5>
-              <p class="card-text">Venice is a popular tourist destination known for its beautiful canals, stunning architecture, and rich history.</p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/trips/kuala.webp" class="card-img-top" alt="kualalampur" />
-            <div class="card-body">
-              <h5 class="card-title">Petronas Towers</h5>
-              <p class="card-text">The Petronas Towers in Kuala Lumpur, Malaysia are a popular tourist destination, attracting millions of visitors each year.</p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
-            </div>
-          </div>
-        </div>
+      <?php
+            $sql = "SELECT * FROM feature_trips";
+            $result = mysqli_query($conn, $sql);
+            
+            if(mysqli_num_rows($result) > 0){
+                while($row = mysqli_fetch_assoc($result)){
+                    echo "
+                    <div class='col'>
+                        <div class='card'>
+                          <img src=".$row['t_image']." class='card-img-top' alt='maldives' />
+                          <div class='card-body'>
+                            <h5 class='card-title'>".$row['t_title']."</h5>
+                            <p class='card-text'>".$row['t_short_des']."</p>
+                            <a class='btn btn-primary' href= 'appointment.php'>BOOK APPOINTMENT</a>
+                          </div>
+                          </div>
+                        </div>
+                    ";
+                  }
+                }else {
+                    echo "0 results";
+                }
+        ?> 
       </div>
     </section>
 

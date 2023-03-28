@@ -7,7 +7,7 @@
             <p>Best Price Tours and Ticket-BPTT is a company that specializes in providing recruitment services for foreign workers. Our company has been in operation for several years and has helped many businesses to fill various positions with skilled and qualified foreign workers.</p>
             <h4 class="">Follow Us</h4>
             <div class="social-icons ">
-              <a href="https://www.facebook.com/bpttbd"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.facebook.com/bpttbd" target="_blank"><i class="fa-brands fa-facebook"></i></a>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-youtube"></i>

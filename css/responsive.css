@@ -12,9 +12,7 @@
   .address-block iframe{
     width: 400px;
   }
-  .btn-primary {
-    font-size: 12px;
-}
+
 }
 @media only screen and (max-width:1200px){
     .carousel-container {
