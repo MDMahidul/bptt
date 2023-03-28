@@ -25,7 +25,7 @@
               <li class="list-group-item"><i class="fa-solid fa-envelope me-2"></i></i>inquiry@bpttbd.com</li>
               <li class="list-group-item">  <i class="fa-solid fa-location-dot "></i>
                 <address class=" d-inline"> 
-                    BPTT, Hasim Tower (4th floor), Suit A-4, <br>Bir Uttam Mir Shawkat Sarak,<br> 205/1AToejgaon Gulshan Link Road 1208 Dhaka, <br>Dhaka Division, Bangladesh.
+                    BPTT, Hashim Tower, 4th floor, Suite A-4,<br> 205/1A Gulshan-Tejgaon Link Road,Dhaka-1208
                 </address>
               </li>
             </ul>

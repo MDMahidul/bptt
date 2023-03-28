@@ -19,67 +19,50 @@
 </head>
 <body>
   <!-- Navbar section -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"
-        ><img src="img/logo.png" alt=""
-      /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ourservices.php">OUR SERVICES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.php">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.php">FAQ</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link disabled text-dark" href="#"><i class="fa-solid fa-phone me-2"></i>+88 01914-243061</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php include "header.php"?>
    <main  class="margin-x">
     <!-- thank you modal on submit button -->
 
   <!-- Modal -->
-
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmation Messege</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Thank You For Contact US</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- addresses  -->
   <div class="w-75 mx-auto"> 
     <h1 class="contact-header">Visit Us</h1>
-    <div class="row  mx-auto mb-2">
-      <div class="col-md-6 col-12 block-1 " data-aos="slide-left">
-          <div class="mb-5">
-              <h5 class="border-bottom mb-3">Our Address</h5>
-              <i class="fa-solid fa-location-dot "></i>
-              <address class=" d-inline"> 
-                  BPTT, Hasim Tower (4th floor), Suit A-4, <br>Bir Uttam Mir Shawkat Sarak,<br> 205/1AToejgaon Gulshan Link Road 1208 Dhaka, <br>Dhaka Division, Bangladesh.
-              </address>
-          </div>
+    <div class="row  mx-auto mb-3">
+    <div class="col-md-6 col-12 block-1 ">
         <div class="mb-5">
-          <h5 class="border-bottom mb-3">Get in touch</h5>
-          <p class=""><i class="fa-solid fa-phone me-2"></i>09611-600500</p>
-          <p class=""><i class="fa-solid fa-envelope me-2"></i></i>inquiry@bptt.io</p>
-          <p class=""><i class="fa-solid fa-envelope me-2"></i></i>info@bptt.io</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-12 block-4  map-container text-c" data-aos="slide-right">
-        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.20799912536305!2d90.41148944390626!3d23.771332124484033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c75ee3158299%3A0xe7fb8d54825fe7bb!2sOSCL%20-%20Overseas%20Study%20Counseling%20Ltd.!5e0!3m2!1sen!2sbd!4v1677474754730!5m2!1sen!2sbd"></iframe>
-      </div>
-   
+            <h5 class="border-bottom mb-3">Our Address</h5>
+            <i class="fa-solid fa-location-dot "></i>
+            <address class=" d-inline"> 
+                BPTT, Hashim Tower, 4th floor, Suite A-4,<br> 205/1A Gulshan-Tejgaon Link Road,Dhaka-1208
+            </address>
+          </div>
+       <div class="mb-5">
+        <h5 class="border-bottom mb-3">Get in touch</h5>
+        <p class=""><i class="fa-solid fa-phone me-2"></i>+8801914-243061</p>
+        <p class=""><i class="fa-solid fa-envelope me-2"></i></i>inquiry@bpttbd.com</p>
+       </div>
     </div>
+    <div class="col-md-6 col-12 block-4  map-container text-c">
+      <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.20799912536305!2d90.41148944390626!3d23.771332124484033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c75ee3158299%3A0xe7fb8d54825fe7bb!2sOSCL%20-%20Overseas%20Study%20Counseling%20Ltd.!5e0!3m2!1sen!2sbd!4v1677474754730!5m2!1sen!2sbd"></iframe>
+    </div>
+   
+  </div>
   </div>
 
   </main>

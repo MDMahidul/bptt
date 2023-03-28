@@ -22,17 +22,74 @@
     }
     .carousel-indicators li { visibility: hidden; }
   </style>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1343489139762343');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5J2TSTB9C9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5J2TSTB9C9');
+</script>
   
 </head>
 <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "117360217966186");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   <!-- Navbar section -->
-  <?php include "header.php"?>
+   <?php include "header.php"?>
+   
   <header class="mx-auto slider-header">
     <div id="demo" class="carousel slide mx-auto" data-bs-ride="carousel">
       <!-- The slideshow/carousel -->
       <div class="carousel-inner">
       <div class="carousel-item active">
-          <img src="img/slider/visa.webp" alt="New York" class="d-block" style="width:100%">
+          <img src="img/slider/visa.webp" alt="visa" class="d-block" style="width:100%">
           <div class="carousel-caption banner-text">
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Job Visa Services</h1>
@@ -41,7 +98,7 @@
           </div>  
         </div>
         <div class="carousel-item ">
-          <img src="img/slider/cabin.webp" alt="Chicago" class="d-block" style="width:100%">
+          <img src="img/slider/cabin.webp" alt="airplane" class="d-block" style="width:100%">
           <div class="carousel-caption banner-text">
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Air Ticket Services</h1>
@@ -50,7 +107,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/slider/migrate.webp" alt="New York" class="d-block" style="width:100%">
+          <img src="img/slider/migrate.webp" alt="migrate" class="d-block" style="width:100%">
           <div class="carousel-caption banner-text">
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Migration/ Immigration Services</h1>
@@ -59,7 +116,7 @@
           </div>  
         </div>
         <div class="carousel-item ">
-          <img src="img/slider/travelvisa.webp" alt="Los Angeles" class="d-block" style="width:100%">
+          <img src="img/slider/travelvisa.webp" alt="travelvisa" class="d-block" style="width:100%">
           <div class="carousel-caption banner-text">
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Tour Program Coordinate Services</h1>
@@ -77,18 +134,19 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
+    
   </header>
-  <main>
+  
     <!-- our services section -->
     <section class="our-services" >
-      <div class="feature-text text-center  mx-auto mb-4" data-aos="zoom-in">
+      <div class="feature-text text-center  mx-auto mb-4">
         <h3 class="section-header">Our Services</h3>
         <p class=""> Best Price Tours and Ticket-BPTT is a company that specializes in providing recruitment services for foreign workers. Our company has been in operation for several years and has helped many businesses to fill various positions with skilled and qualified foreign workers. Our primary goal is to assist businesses to bridge the gap in the labor market by providing a pool of skilled workers who are ready to work in various sectors. </p>
       </div>
-      <div class="row"  data-aos="slide-up">
+      <div class="row" data-aos="slide-up">
         <div class="col-md-3 col-12 mb-3 mt-3">
           <div class="card">
-            <img src="img/services/migrate.webp" class="card-img-top" alt="..." />
+            <img src="img/services/migrate.webp" class="card-img-top" alt="migration" />
             <div class="card-body">
               <h5 class="card-title">Migration/ Immigration Services</h5>
               <p class="card-text">BPTT provides migration and immigration services to foreign workers who are interested in working in various countries.</p>
@@ -99,7 +157,7 @@
 
         <div class="col-md-3 col-12 mb-3 mt-3">
           <div class="card">
-            <img src="img/services/job.webp" class="card-img-top" alt="..." />
+            <img src="img/services/job.webp" class="card-img-top" alt="job" />
             <div class="card-body">
               <h5 class="card-title">Job Visa Services</h5>
               <p class="card-text"> BPTT also provides job visa services to foreign workers who are interested in working in various countries. </p>
@@ -109,7 +167,7 @@
         </div>
         <div class="col-md-3 col-12 mb-3 mt-3">
           <div class="card">
-            <img src="img/services/travel.webp" class="card-img-top" alt="..." />
+            <img src="img/services/travel.webp" class="card-img-top" alt="travel" />
             <div class="card-body">
               <h5 class="card-title">Air Ticket Services</h5>
               <p class="card-text">BPTT provides air ticket services to our clients. We work with reputable airlines to ensure that our clients get the best deals on air tickets.</p>
@@ -119,7 +177,7 @@
         </div>
         <div class="col-md-3 col-12 mb-3 mt-3">
           <div class="card">
-            <img src="img/services/travelcard.webp" class="card-img-top" alt="..." />
+            <img src="img/services/travelcard.webp" class="card-img-top" alt="tour" />
             <div class="card-body">
               <h5 class="card-title">Tour Program Coordinate Services</h5>
               <p class="card-text">BPTT provides tour program coordination services to our clients. We work with reputable airlines to ensure that our clients get the best deals. </p>
@@ -130,7 +188,7 @@
       </div>
     </section>
     <!-- why choose us section -->
-    <section class="  ">
+    <section class=" mt-5 ">
       <div class="row mx-auto about-us" data-aos="slide-up">
         <div class="col-sm-12 col-md-12 col-lg-6" >
           <h3 class="section-header">Why Choose <span style="color: #2c6532ce;">BPTT</span> ?</h3>
@@ -143,54 +201,86 @@
         </div>
           </ul>
         <div class="col-sm-12 col-md-12 col-lg-6 text-center" >
-          <img class="w-75 img-fluid" src="img/why.webp" alt="" />
+          <img class="w-75 img-fluid" src="img/why.webp" alt="why choose us" />
         </div>
       </div>
     </section>
     <!-- feature jobs -->
-    <section class="  feature-trips">
+       <section class="  feature-jobs">
       <!-- card section -->
       <div class="feature-text text-center  mx-auto mb-4" data-aos="zoom-in" >
         <h3 class="dancing-font">Our Agency's</h3>
         <h3><span style="color: #2c6532ce;">Offerd Job Opportunites</span></h3>
       </div>
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="scroll-content"  data-aos="slide-up">
-        <div class="col">
-          <div class="card">
-            <img src="img/job/driver.webp" class="card-img-top" alt="..." />
+      <div class="row autoPlay row-cols-md-12 g-4" data-aos="slide-up">
+        <div class="col-12 text-center">
+          <div class="card job-card">
+          <img src="img/job/driver.webp" class="card-img-top" alt="Driving" />
             <div class="card-body">
-              <h5 class="card-title">Driving</h5>
-              <p class="card-text"></p>
-              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            <h5 class="card-title">Driving</h5>
+            <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/job/nurse.webp" class="card-img-top" alt="..." />
+        <div class="col-12 text-center">
+          <div class="card job-card">
+            <img src="img/job/nurse.webp" class="card-img-top" alt="Nursing" />
             <div class="card-body">
               <h5 class="card-title">Nursing</h5>
-              <p class="card-text"></p>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/job/tech.webp" class="card-img-top" alt="..." />
+        <div class="col-12 text-center">
+          <div class="card job-card">
+            <img src="img/job/tech.webp" class="card-img-top" alt="Technician" />
             <div class="card-body">
               <h5 class="card-title">Technician </h5>
-              <p class="card-text"></p>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
+        <div class="col-12 text-center">
+          <div class="card job-card">
             <img src="img/job/welder.webp" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Welder</h5>
-              <p class="card-text"></p>
+              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="card job-card">
+            <img src="img/job/farmer.webp" class="card-img-top" alt="Farmer" />
+            <div class="card-body">
+              <h5 class="card-title">Farmer</h5>
+              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="card job-card">
+            <img src="img/job/fisher.webp" class="card-img-top" alt="Fisherman" />
+            <div class="card-body">
+              <h5 class="card-title">Fisherman</h5>
+              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="card job-card">
+            <img src="img/job/eng.webp" class="card-img-top" alt="Engineer" />
+            <div class="card-body">
+              <h5 class="card-title">Engineer</h5>
+              <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <div class="card job-card">
+            <img src="img/job/cleaner.webp" class="card-img-top" alt="Cleaner" />
+            <div class="card-body">
+              <h5 class="card-title">Cleaner</h5>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
@@ -198,7 +288,7 @@
       </div>
     </section>
     <!-- feature trips -->
-    <section class="  feature-trips">
+    <section class=" mt-5 feature-trips">
       <!-- card section -->
       <div class="feature-text text-center  mx-auto mb-4" data-aos="zoom-in">
         <h3 class="dancing-font">Our Agency's</h3>
@@ -207,40 +297,40 @@
       <div class="row row-cols-1 row-cols-md-4 g-4" id="scroll-content" data-aos="slide-up">
         <div class="col">
           <div class="card">
-            <img src="img/trips/maldives.webp" class="card-img-top" alt="..." />
+            <img src="img/trips/maldives.webp" class="card-img-top" alt="maldives" />
             <div class="card-body">
               <h5 class="card-title">Maldives</h5>
-              <p class="card-text">Maldives is a popular tourist destination, known for its pristine beaches, crystal-clear waters, and vibrant marine life. Tourists from all over the world visit here to relax, and experience the natural beauty. With luxurious resorts, and cultural experiences, there is something for every type of traveler.</p>
+              <p class="card-text">Maldives is a popular tourist destination, known for its pristine beaches, crystal-clear waters, and vibrant marine life. </p>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/trips/eiffel.webp" class="card-img-top" alt="..." />
+            <img src="img/trips/eiffel.webp" class="card-img-top" alt="eiffel tower" />
             <div class="card-body">
               <h5 class="card-title">Paris</h5>
-              <p class="card-text">The Eiffel Tower is a popular tourist destination in Paris, France. It was built in 1889 and stands at 324 meters tall. Visitors can take the elevator or stairs to the top and enjoy stunning views of the city. The tower attracts millions of tourists each year, making it one of the most visited landmarks in the world.</p>
+              <p class="card-text">The Eiffel Tower is a popular tourist destination in Paris, France. It was built in 1889 and stands at 324 meters tall.</p>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/trips/venice.webp" class="card-img-top" alt="..." />
+            <img src="img/trips/venice.webp" class="card-img-top" alt="venice" />
             <div class="card-body">
               <h5 class="card-title">Venice </h5>
-              <p class="card-text">Venice is a popular tourist destination known for its beautiful canals, stunning architecture, and rich history. Visitors can take gondola rides, visit historic landmarks like St. Mark's Basilica and the Doge's Palace, and explore the charming streets and shops of the city. This is one of the most beautiful place in the world.</p>
+              <p class="card-text">Venice is a popular tourist destination known for its beautiful canals, stunning architecture, and rich history.</p>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="img/trips/kuala.webp" class="card-img-top" alt="..." />
+            <img src="img/trips/kuala.webp" class="card-img-top" alt="kualalampur" />
             <div class="card-body">
               <h5 class="card-title">Petronas Towers</h5>
-              <p class="card-text">The Petronas Towers in Kuala Lumpur, Malaysia are a popular tourist destination, attracting millions of visitors each year. Visitors can take a guided tour of the towers. The towers are also surrounded by a park, shopping mall, and other attractions, making it a great place to spend the day.</p>
+              <p class="card-text">The Petronas Towers in Kuala Lumpur, Malaysia are a popular tourist destination, attracting millions of visitors each year.</p>
               <button class="btn btn-primary" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
             </div>
           </div>
@@ -249,7 +339,7 @@
     </section>
 
     <!-- provide pack -->
-    <section class=" ">
+    <section class=" mt-5">
       <div class="packeges-text text-center mx-auto mb-4" data-aos="zoom-in">
         <h3 class="dancing-font">Our Agency's</h3>
         <h3 class="dancing-font"><span style="color: #2c6532ce;">Provided Packeges</span></h3>
@@ -303,7 +393,6 @@
       </div>
       <!--  -->
     </section>
-  </main>
   <!-- footer -->
   <?php include "footer.php" ?>
   
