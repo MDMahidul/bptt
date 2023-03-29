@@ -101,7 +101,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Job Visa Services</h1>
             <h5 class="banner-des"></h5>
-            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK APPOINTMENT</button>
           </div>  
         </div>
         <div class="carousel-item ">
@@ -110,7 +110,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Air Ticket Services</h1>
             <h5 class="banner-des"></h5>
-            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK APPOINTMENT</button>
           </div>
         </div>
         <div class="carousel-item">
@@ -119,7 +119,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Migration/ Immigration Services</h1>
             <h5 class="banner-des"></h5>
-            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK APPOINTMENT</button>
           </div>  
         </div>
         <div class="carousel-item ">
@@ -128,7 +128,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
             <h3 class="dancing-font-banner">best tourism agency in Bangladesh</h3>
             <h1 class="banner-header">Tour Program Coordinate Services</h1>
             <h5 class="banner-des"></h5>
-            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK YOUR APPOINTMENT</button>
+            <button class="btn btn-primary btn-text" onclick="location.href = 'appointment.php';">BOOK APPOINTMENT</button>
           </div>
         </div>
       </div>
@@ -166,7 +166,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
                         <p class='card-text'>".$row['s_short_des']."</p>
                        <div class='d-flex justify-content-between align-itmes-center'>
                         <a class='btn btn-primary' href = 'appointment.php';>BOOK APPOINTMENT</a>
-                        <a class='outline-btn' href = 'servicesdetails.php?id=".$row['id']."';>Learn More</a>
+                        <a class='outline-btn' href = 'servicesdetails.php?id=".$row['id']."';>LEARN MORE</a>
                        </div>
                       </div>
                     </div>
@@ -216,10 +216,10 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
                     echo "
                     <div class='col-12 text-center'>
                       <div class='card job-card'>
-                       <img src=".$row['j_image']." class='card-img-top' alt='Driving' />
+                       <img src=".$row['j_image']." class='card-img-top' alt='".$row['j_title']."' />
                         <div class='card-body'>
-                          <h5 class='card-title'>".$row['j_title']."</h5>
-                          <a class='outline-btn' href='appointment.php'>LEARN MORE</a>
+                          <h4 class='card-title mb-3'>".$row['j_title']."</h4>
+                          <a class='outline-btn' href='jobdetails.php?id=".$row['id']."'>LEARN MORE</a>
                         </div>
                       </div>
                     </div>
@@ -252,7 +252,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
                           <img src=".$row['t_image']." class='card-img-top' alt='maldives' />
                           <div class='card-body'>
                             <h5 class='card-title'>".$row['t_title']."</h5>
-                            <p class='card-text'>".$row['t_short_des']."</p>
+                            <p class='card-text text-justify'>".$row['t_short_des']."</p>
                             <a class='btn btn-primary' href= 'appointment.php'>BOOK APPOINTMENT</a>
                           </div>
                           </div>

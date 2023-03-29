@@ -28,7 +28,7 @@
     <div class=' mb-3' data-aos="slide-up">
       <div class='row g-0 '>
           <div class='col-md-5 align-self-center pe-2'>
-              <img src="img/services/visa.jpg" class='img-fluid p-5' alt="visa">
+              <img src="img/services/visa.webp" class='img-fluid p-5' alt="visa">
           </div>
           <div class='col-md-7'>
             <div class='card-body services-des'>

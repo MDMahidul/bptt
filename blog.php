@@ -52,7 +52,6 @@
 </div>
 <!-- modal end -->
 <div class="container mt-3 py-5">
- <div class="row" data-aos="slide-up">
   <?php
             $sql = "SELECT * FROM blog";
             $result = mysqli_query($conn, $sql);
@@ -60,12 +59,12 @@
             if(mysqli_num_rows($result) > 0){
                 while($row = mysqli_fetch_assoc($result)){
                     echo "
-                    <div class='card-group '>
-                    <div class='card mb-3'>
-                        <div class='col-md-4 my-auto '>
-                          <img id='blog-img' src=".$row['b_image']." class='img-fluid rounded-start p-3 rounded' alt='>
+                    <div class='card mb-3' data-aos='slide-up'>
+                    <div class='row' >
+                        <div class='col-md-3 my-auto'>
+                          <img id='blog-img' src=".$row['b_image']." class='img-fluid rounded-start p-2 rounded' alt=''>
                         </div>
-                        <div class='col-md-8'>
+                        <div class='col-md-9'>
                           <div class='card-body blog'>
                             <h5 class='card-title' id='blog-title'>".$row['b_title']."</h5>
                             <p class='card-text' id='blog-body'>".$row['b_long_des']."</p>
@@ -73,7 +72,7 @@
                           </div>
                         </div>
                     </div>
-                  </div>
+                    </div>
                     ";
                   }
                 }else {
@@ -81,131 +80,15 @@
                 }
         ?> 
 
-  </div>
 </div>
 </main>
 <!-- end -->
-<?php include "footer.php" ?>
-
-      <script src="js/blog.js"></script>
-<script src="js/app.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <!-- aos lib -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ offset: 200, duration: 400, once:true });
-  </script>
-  <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
-<body>
-  <!-- Navbar section -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"
-        ><img src="img/logo.png" alt=""
-      /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ourservices.php">OUR SERVICES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.php">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.php">FAQ</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link disabled text-dark" href="#"><i class="fa-solid fa-phone me-2"></i>+88 01914-243061</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!-- blog page modal -->
-<main  class="margin-x">
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg  modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel blog-modal-title"></h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       <div class="text-center">
-        <img id="modal-image" src="" alt="Modal Image" class="w-75 mb-4">
-       </div>
-        <p id="modal-description" class=""></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- modal end -->
-<div class="container mt-3 py-5">
- <div class="row">
-  <div class="col-md-6 col-12" data-aos="slide-right">
-    <div class="card-group ">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4 my-auto ">
-            <img id="blog-img" src="img/blog/bali.jpg" class="img-fluid rounded-start p-3 rounded" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body blog">
-              <h5 class="card-title" id="blog-title">Travel to Bali</h5>
-              <p class="card-text" id="blog-body">One of the most well-liked travel locations in Southeast Asia is Bali, which serves as a hub for yogis, hippies, and digital nomads. When I started going in 2010, it was well-liked, and popularity has only grown since then.<br><br>
-  
-                Despite the fact that some areas of Bali experience overtourism (I'm looking at you, Kuta Beach), there are still vast areas of the island where you can avoid the crowds and take in the picturesque scenery.<br><br>
-                
-                Whatever your interests or budget, there are a ton of fantastic things to see and do on this island. Popular activities in Bali include hiking, surfing, tanning, discovering the local cuisine, taking a cooking class, spotting wildlife, visiting hot springs, and simply unwinding.One of the most well-liked travel locations in Southeast Asia is Bali, which serves as a hub for yogis, hippies, and digital nomads. When I started going in 2010, it was well-liked, and popularity has only grown since then.<br><br>
-  
-                Despite the fact that some areas of Bali experience overtourism (I'm looking at you, Kuta Beach), there are still vast areas of the island where you can avoid the crowds and take in the picturesque scenery.<br><br>
-                
-                Whatever your interests or budget, there are a ton of fantastic things to see and do on this island. Popular activities in Bali include hiking, surfing, tanning, discovering the local cuisine, taking a cooking class, spotting wildlife, visiting hot springs, and simply unwinding.</p>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary read-more ">READ MORE</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
-  </div>
-</div>
-</main>
 <!-- end -->
 <?php include "footer.php" ?>
 
-      <script src="js/blog.js"></script>
-<script src="js/app.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/app.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
   <!-- aos lib -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

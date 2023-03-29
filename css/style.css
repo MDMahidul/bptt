@@ -33,9 +33,10 @@ i{
 .btn-primary{
     background-color: #e6af52;
     border: none;
+    padding:  10px !important;
 }
 .outline-btn {
-    padding: 5px 20px;
+    padding: 8px 10px;
     background-color: #fff;
     border: 2px solid #e6af52;
     border-radius: 5px;
@@ -320,10 +321,9 @@ address{
   }
 /* blog page*/
 .blog .card-text{
-    width: 300px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     overflow: hidden;
 }
 #blog-img img{
@@ -339,7 +339,9 @@ address{
 .margin-x{
     margin-top: 120px !important;
 }
-
+.service-img{
+    padding: 24px !important;
+}
 /* marquee tag */
 /* marquee{
     background: #d8a54d67 !important;

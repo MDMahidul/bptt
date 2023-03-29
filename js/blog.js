@@ -59,7 +59,5 @@ const readMoreBtns = document.getElementsByClassName('read-more');
         modalImage.setAttribute('src', imageSrc);
         modalTitle.innerHTML = title;
         modalDescription.innerHTML = description;
-        
-
     })
   }
