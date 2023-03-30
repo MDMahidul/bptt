@@ -25,7 +25,8 @@
              
               <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Mobile Number</label>
-                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Mobile Number" name="c_phone" required pattern="[0-1]{2}[0-9]{9}">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Your Mobile Number" name="c_phone" required pattern="(\+88)?01[3-9]\d{8}">
+                
               </div>
             
               <div class="mb-3">
@@ -36,3 +37,4 @@
     </div>
    </main>
    <?php include "footer.php"?>
+   
