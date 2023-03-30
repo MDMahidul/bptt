@@ -4,24 +4,15 @@
     include_once 'db.php';
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="img/BPT.png" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <script src="https://kit.fontawesome.com/0500892bc1.js" crossorigin="anonymous" ></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <title>Best Price Tours and Ticket</title>
   <style>
      .carousel{
@@ -56,8 +47,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
   gtag('config', 'G-5J2TSTB9C9');
 </script>
   
-</head>
-<body>
+
     <!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
@@ -88,6 +78,8 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+    </head>
+    <body>
   <!-- Navbar section -->
    <?php include "header.php"?>
    
@@ -158,7 +150,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
             if(mysqli_num_rows($result) > 0){
                 while($row = mysqli_fetch_assoc($result)){
                     echo "
-                    <div class='col-md-6 col-lg-3 col-12 mb-3 mt-3'>
+                    <div class='col-md-6 col-lg-6 col-xl-3 col-12 mb-3 mt-3'>
                     <div class='card'>
                       <img src=".$row['s_image']." class='card-img-top' alt='migration' />
                       <div class='card-body'>
@@ -166,7 +158,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
                         <p class='card-text'>".$row['s_short_des']."</p>
                        <div class='d-flex justify-content-between align-itmes-center'>
                         <a class='btn btn-primary' href = 'appointment.php';>BOOK APPOINTMENT</a>
-                        <a class='outline-btn' href = 'servicesdetails.php?id=".$row['id']."';>LEARN MORE</a>
+                        <a class='outline-btn btn ' href = 'servicesdetails.php?id=".$row['id']."&".$row['s_title']."'>LEARN MORE</a>
                        </div>
                       </div>
                     </div>
@@ -219,7 +211,7 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
                        <img src=".$row['j_image']." class='card-img-top' alt='".$row['j_title']."' />
                         <div class='card-body'>
                           <h4 class='card-title mb-3'>".$row['j_title']."</h4>
-                          <a class='outline-btn' href='jobdetails.php?id=".$row['id']."'>LEARN MORE</a>
+                          <a class='outline-btn btn' href='jobdetails.php?id=".$row['id']."&".$row['j_title']."'>LEARN MORE</a>
                         </div>
                       </div>
                     </div>
@@ -323,16 +315,8 @@ src="https://www.facebook.com/tr?id=1343489139762343&ev=PageView&noscript=1"
     </section>
   <!-- footer -->
   <?php include "footer.php" ?>
-  
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+
   <script src="js/app.js"></script>
-  <!-- aos lib -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({ offset: 200, duration: 400, once:true });
-  </script>
-  <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
